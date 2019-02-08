@@ -10,7 +10,7 @@ let appData = {
 
 function makeButtons() {
   let template = '';
-  appData.days[0].forEach((index) => {
+  appData.days[0].forEach((week, index) => {
     template += `<div class="col-2 d-flex flex-column border text-center border-light rounded bg-toggle py-3">`
     template += `<h4 class="pt-2 text-light" onclick="dayIncrease(${index}, 0)"><i class="far fa-plus-square"></i></h4>`
     template += `<h4 id="dailyTotal0${index}">0</h4>`
@@ -22,7 +22,7 @@ function makeButtons() {
 
   document.getElementById('week0').innerHTML = template;
   let template2 = '';
-  appData.days[1].forEach((index) => {
+  appData.days[1].forEach((week, index) => {
     template2 += `<div class="col-2 d-flex flex-column text-center border border-light rounded bg-toggle py-3">`
     template2 += `<h4 class=" pt-2 text-light" onclick="dayIncrease(${index}, 1)"><i class="far fa-plus-square"></i></h4>`
     template2 += `<h4 id="dailyTotal1${index}">0</h4>`
