@@ -62,12 +62,16 @@ function generateTotal(week) {
   return total
 }
 
-function draw(day, week) {
-  document.getElementById(`dailyTotal${week}${day}`).innerText = appData.days[week][day];
-  let weeklyHours = generateTotal(week)
-  document.getElementById(`weektotal${week}`).innerText = weeklyHours;
-
+function updatePay() {
   document.getElementById('payDay').innerText = document.getElementById('hourlyRate').value * (appData.week0Total + appData.week1Total)
 }
+
+function draw(day, week) {
+  document.getElementById(`dailyTotal${week}${day}`).innerText = appData.days[week][day];
+  document.getElementById(`weektotal${week}`).innerText = generateTotal(week);
+  updatePay()
+}
+
+document.getElementById('hourlyRate').addEventListener('keyup', updatePay)
 
 makeButtons()
