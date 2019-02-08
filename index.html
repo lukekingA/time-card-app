@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Time-card</title>
+</head>
+
+<body>
+  <section class="container-fluid bg-dark text-light py-5 shadow">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Bi-Weekly Time Card</h1>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid pt-3">
+    <div id="week0" class="row">
+
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <h4>M</h4>
+      </div>
+      <div class="col">
+        <h4>T</h4>
+      </div>
+      <div class="col">
+        <h4>W</h4>
+      </div>
+      <div class="col">
+        <h4>Th</h4>
+      </div>
+      <div class="col">
+        <h4>F</h4>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div id="week1" class="row">
+
+    </div>
+  </section>
+  <div class="row mt-3">
+    <div class="col-8 text-center">
+      <div class="input-group border border-dark rounded ml-2">
+        <div class="input-group-prepend"><span class="input-group-text">Hourly Rate</span></div>
+        <input type="text" class="form-control">
+      </div>
+      <!-- <h4>Hourly rate:</h4>
+      <input id="hourlyRate" type="text" placeholder="0" size="10" class="rounded"> -->
+    </div>
+    <div class="col-4 text-center">
+      <h4 id="payDay">pay</h4>
+    </div>
+  </div>
+
+  <script src="app/app.js"></script>
+</body>
+
+</html>
